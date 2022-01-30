@@ -79,6 +79,8 @@ class QP(object):
   Attributes:
     pos: Location of center of mass.
     rot: Rotation about center of mass, represented as a quaternion.
+      If the body is part of a joint, rotation is about the point of
+      attachment to the parent body instead.
     vel: Velocity.
     ang: Angular velocity about center of mass.
   """
